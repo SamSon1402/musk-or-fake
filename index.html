@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSK OR FAKE? - Can you spot the real Elon quotes?</title>
+    <!-- Add Google Fonts for Impact alternative if needed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components/header.css">
+    <link rel="stylesheet" href="css/components/quote-card.css">
+    <link rel="stylesheet" href="css/components/ad-banner.css">
+    <link rel="stylesheet" href="css/components/success-message.css">
+    <link rel="stylesheet" href="css/components/character-bubble.css">
+    <link rel="stylesheet" href="css/components/footer.css">
+    <link rel="stylesheet" href="css/components/reset-button.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Header Component -->
+    <header class="header">
+        <div class="logo-section">
+            <div class="logo-circle">
+                <img src="assets/images/elon-logo.png" alt="Elon Musk cartoon" />
+            </div>
+            <h1 class="title-text">MUSK OR FAKE?</h1>
+        </div>
+        <p class="tagline">Many fake games out there, but this one? 100% real. Everyone's talking about it!</p>
+    </header>
+    
+    <!-- Main Headline Component -->
+    <div class="main-headline">
+        <h2>ONE QUOTE IS REAL. THE REST? FAKE NEWS. CAN YOU SPOT IT?</h2>
+        <p class="instruction-text">Find the real Elon Musk quote in as few attempts as possible. New game every day.</p>
+    </div>
+    
+    <!-- Game Controls - New component for reset button -->
+    <div class="game-controls">
+        <div class="reset-button-container">
+            <button id="resetButton" class="reset-button" title="Get new quotes">
+                <img src="assets/images/reset-icon.svg" alt="Reset" class="reset-icon">
+                New Quotes
+            </button>
+        </div>
+    </div>
+    
+    <!-- Ad Banner Component -->
+    <div class="ad-banner">
+        <div class="ad-text">This ad space was too powerful for AdSense</div>
+        <button class="contact-button">
+            CONTACT ME
+            <span class="contact-subtitle">Only very smart people!</span>
+        </button>
+    </div>
+    
+    <!-- Quote Cards Container -->
+    <div class="quotes-container" id="quotesContainer">
+        <!-- Quote cards will be added here dynamically -->
+    </div>
+    
+    <!-- Success Message Component -->
+    <div class="success-message" id="successMessage">
+        <h2 class="success-headline">TREMENDOUS! YOU FOUND IT.</h2>
+        <p class="success-subtext">Come back tomorrow for another challenge</p>
+        <button class="share-button" onclick="handleShare()">
+            <img src="assets/images/share-icon.svg" class="share-icon" alt="Share">
+            Share
+        </button>
+        
+        <!-- Reset button also appears in success message -->
+        <button id="resetButtonSuccess" class="reset-button" style="margin-top: 15px;" title="Try new quotes">
+            <img src="assets/images/reset-icon.svg" alt="Reset" class="reset-icon">
+            Try Again
+        </button>
+    </div>
+    
+    <!-- Character Speech Bubble Component -->
+    <div class="character-bubble" id="characterBubble">
+        <div class="speech-bubble">
+            <p class="speech-text" id="speechText"></p>
+            <div class="bubble-pointer"></div>
+        </div>
+        <img class="character-image" alt="Elon Musk character" />
+    </div>
+    
+    <!-- Footer Component -->
+    <footer class="footer">
+        <p>A questionable idea by me. Copyright © 2025. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/quotes-data.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/game-logic.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

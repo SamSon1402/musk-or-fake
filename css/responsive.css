@@ -1,0 +1,92 @@
+/* Responsive Adjustments */
+
+/* Mobile Adjustments (screens < 768px) */
+@media (max-width: 768px) {
+    /* Typography adjustments */
+    .title-text {
+        font-size: 30px;
+    }
+    
+    .main-headline h2 {
+        font-size: 26px;
+    }
+    
+    .instruction-text,
+    .quote-text {
+        font-size: 14px;
+    }
+    
+    /* Component adjustments */
+    .ad-banner {
+        height: auto;
+        padding: 10px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .logo-circle {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .logo-circle img {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .success-headline {
+        font-size: 22px;
+    }
+    
+    .success-subtext {
+        font-size: 14px;
+    }
+    
+    .character-image {
+        width: 70px;
+    }
+    
+    /* Reset button adjustments */
+    .reset-button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+
+/* Tablet Adjustments (screens 768px-1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .quotes-container,
+    .success-message,
+    .character-bubble,
+    .ad-banner {
+        max-width: 700px;
+        padding: 0 20px;
+    }
+    
+    .main-headline {
+        padding: 30px 20px;
+    }
+}
+
+/* Desktop Optimization (screens > 1024px) */
+@media (min-width: 1025px) {
+    .quotes-container,
+    .success-message,
+    .character-bubble,
+    .ad-banner {
+        max-width: 800px;
+    }
+    
+    .main-headline {
+        padding: 40px 20px;
+    }
+    
+    body {
+        padding-bottom: 40px;
+    }
+    
+    .quote-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+}

@@ -1,0 +1,74 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FAF7F2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Color Variables */
+:root {
+    --primary-red: #DB3A34;
+    --navy-blue: #002868;
+    --success-green: #1A9850;
+    --error-red: #D90429;
+    --background: #FAF7F2;
+    --white: #FFFFFF;
+    --black: #000000;
+    --teal: #008080;
+}
+
+/* Typography */
+@font-face {
+    font-family: 'DisplayFont';
+    src: url('https://fonts.gstatic.com/s/anton/v11/1Ptgg87LROyAm3K9-C8CSKlvPfE.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Using Impact for the headline font to match Trump game - fallbacks to similar fonts */
+h1, h2, h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Main Headline Component - Moving from component CSS for shared styles */
+.main-headline {
+    width: 100%;
+    padding: 24px 16px;
+    text-align: center;
+}
+
+.main-headline h2 {
+    font-size: 32px;
+    color: var(--navy-blue);
+    line-height: 1.2;
+    margin-bottom: 16px;
+    font-weight: 900;
+    letter-spacing: 0px;
+}
+
+.instruction-text {
+    font-size: 16px;
+    color: var(--navy-blue);
+    margin-top: 16px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Container for all components */
+.quotes-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 16px;
+}

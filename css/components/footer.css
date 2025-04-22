@@ -1,0 +1,10 @@
+/* Footer Component */
+.footer {
+    width: 100%;
+    background-color: var(--primary-red);
+    padding: 12px;
+    text-align: center;
+    color: var(--white);
+    font-size: 12px;
+    margin-top: auto;
+}

@@ -1,0 +1,86 @@
+/* Header Component */
+.header {
+    width: 100%;
+    background-color: #e63c3c; /* Updated to match the exact red from your image */
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--white);
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Increased logo size */
+.logo-circle {
+    width: 90px;  /* Increased from 60px */
+    height: 90px; /* Increased from 60px */
+    border-radius: 50%;
+    background-color: var(--white);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Added subtle shadow */
+}
+
+.logo-circle img {
+    width: 80px;  /* Increased from 54px */
+    height: 80px; /* Increased from 54px */
+    object-fit: contain;
+}
+
+.title-text {
+    font-size: 48px; /* Increased from 42px to maintain proportion with larger logo */
+    color: var(--white);
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-left: 5px;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+}
+
+.tagline {
+    font-size: 15px; /* Slightly increased */
+    color: var(--white);
+    margin-top: 10px;
+    text-align: center;
+    max-width: 600px;
+    font-style: italic;
+    font-family: Arial, sans-serif;
+}
+
+/* Make header more like the image */
+@media (min-width: 768px) {
+    .logo-section {
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .logo-circle {
+        margin-right: 10px;
+    }
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 576px) {
+    .logo-circle {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .logo-circle img {
+        width: 62px;
+        height: 62px;
+    }
+    
+    .title-text {
+        font-size: 36px;
+    }
+}

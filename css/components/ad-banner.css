@@ -1,0 +1,48 @@
+/* Ad Banner Component */
+.ad-banner {
+    width: 100%;
+    max-width: 600px;
+    height: 60px;
+    background-color: #001D3D;
+    border-radius: 4px;
+    margin: 24px auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    color: var(--white);
+}
+
+.ad-text {
+    font-size: 12px;
+}
+
+.contact-button {
+    background-color: var(--error-red);
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: var(--white);
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.contact-subtitle {
+    font-size: 10px;
+    display: block;
+    text-align: center;
+}
+
+/* Censored overlay styling */
+.censored-overlay {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 80px;
+    height: auto;
+    transform: rotate(-5deg);
+    z-index: 1;
+}

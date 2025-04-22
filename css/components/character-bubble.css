@@ -1,0 +1,80 @@
+/* Character Speech Bubble Component */
+.character-bubble {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 24px auto;
+    display: none;
+    padding: 0 16px;
+}
+
+.speech-bubble {
+    background-color: var(--white);
+    border: 2px solid #CCCCCC;
+    border-radius: 16px;
+    padding: 12px 20px;
+    position: relative;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.bubble-pointer {
+    width: 20px;
+    height: 20px;
+    background-color: var(--white);
+    border-right: 2px solid #CCCCCC;
+    border-bottom: 2px solid #CCCCCC;
+    position: absolute;
+    bottom: -10px;
+    left: 20%;
+    transform: rotate(45deg);
+}
+
+.speech-text {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333333;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.character-image {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin-left: 10%;
+    background-color: transparent;
+}
+
+/* Different character images for correct/incorrect states */
+.character-bubble.correct .character-image {
+    content: url('../../assets/images/elon-character.png');
+}
+
+.character-bubble.incorrect .character-image {
+    content: url('../../assets/images/elon-character-wrong.png'); /* New image for wrong answers */
+    width: 120px; /* Adjust size as needed for the kneeling character */
+}
+
+/* Different speech bubbles for correct/incorrect */
+.character-bubble.correct .speech-bubble {
+    background-color: #e6f5ec;
+    border-color: #1A9850;
+}
+
+.character-bubble.correct .bubble-pointer {
+    background-color: #e6f5ec;
+    border-color: #1A9850;
+}
+
+.character-bubble.incorrect .speech-bubble {
+    background-color: #faebeb;
+    border-color: #D90429;
+}
+
+.character-bubble.incorrect .bubble-pointer {
+    background-color: #faebeb;
+    border-color: #D90429;
+}

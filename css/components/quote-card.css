@@ -1,0 +1,62 @@
+/* Quote Card Component */
+.quote-card {
+    width: 100%;
+    padding: 16px;
+    border: 2px solid var(--navy-blue);
+    border-radius: 12px;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.quotation-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--navy-blue);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin-right: 12px;
+    flex-shrink: 0;
+    font-family: Georgia, Times, serif;
+    font-weight: bold;
+}
+
+.quote-text {
+    flex: 1;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    color: var(--navy-blue);
+    font-weight: 500;
+}
+
+.quote-card.correct {
+    border: 2px solid var(--success-green);
+    background-color: #E6F5EC;
+}
+
+.quote-card.correct .quotation-circle {
+    background-color: var(--success-green);
+}
+
+.quote-card.incorrect {
+    border: 2px solid var(--error-red);
+    background-color: #FAEBEB;
+}
+
+.quote-card.incorrect .quotation-circle {
+    background-color: var(--error-red);
+}
+
+.quote-card.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
