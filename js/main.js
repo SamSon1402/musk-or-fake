@@ -20,16 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
  * Set up event listeners for interactive elements
  */
 function setupEventListeners() {
-    // Contact button email handling
-    const contactButton = document.querySelector('.contact-button');
-    if (contactButton) {
-        // The mailto: link is now handled directly in the HTML as an anchor tag
-        // This event listener is kept for backwards compatibility
-        contactButton.addEventListener('click', function(e) {
-            // Don't need to do anything special here since the mailto: link handles it
-            console.log("Contact button clicked!");
-        });
-    }
+    // Note: We're NOT adding a click handler to the contact button anymore
+    // since it's now a direct mailto: link that should work on its own
     
     // Reset button functionality
     const resetButton = document.getElementById('resetButton');
