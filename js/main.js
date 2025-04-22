@@ -20,11 +20,14 @@ document.addEventListener('DOMContentLoaded', function() {
  * Set up event listeners for interactive elements
  */
 function setupEventListeners() {
-    // Contact button in ad banner
+    // Contact button email handling
     const contactButton = document.querySelector('.contact-button');
     if (contactButton) {
-        contactButton.addEventListener('click', function() {
-            alert("This would be a contact form in a real app. Only very smart people would see it!");
+        // The mailto: link is now handled directly in the HTML as an anchor tag
+        // This event listener is kept for backwards compatibility
+        contactButton.addEventListener('click', function(e) {
+            // Don't need to do anything special here since the mailto: link handles it
+            console.log("Contact button clicked!");
         });
     }
     

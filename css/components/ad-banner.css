@@ -28,6 +28,20 @@
     border: none;
     cursor: pointer;
     text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.contact-button:hover {
+    background-color: #b5031f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-button:active {
+    transform: translateY(1px);
 }
 
 .contact-subtitle {
